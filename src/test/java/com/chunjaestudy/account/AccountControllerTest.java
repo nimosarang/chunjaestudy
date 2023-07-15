@@ -65,6 +65,7 @@ class AccountControllerTest {
             .password("12345678")
             .nickname("eddy")
             .build();
+
         Account newAccount = accountRepository.save(account);
         newAccount.generateEmailCheckToken();
 
